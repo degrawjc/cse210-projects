@@ -8,7 +8,8 @@ public List<string> _promptlist = new List<string>{
 "Is there anything that has been on your mind recently?",
 "Who/what left an impact on you today?",
 "What was the most challenging part of the day?",
-"What am I the most proud of today?"
+"What am I the most proud of today?",
+"How did I see the hand of the Lord in my lfe today?"
 };
 public string Prompt()
 {
