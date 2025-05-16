@@ -1,3 +1,5 @@
+//Good
+
 public class PromptGenerator
 {
 public List<string> _promptlist = new List<string>{
@@ -11,9 +13,11 @@ public List<string> _promptlist = new List<string>{
 "What am I the most proud of today?",
 "How did I see the hand of the Lord in my lfe today?"
 };
-public string Prompt()
+public string GetRandomPrompt()
 {
-return "";
+Random get_index = new Random();
+int index = get_index.Next(0, _promptlist.Count);
+return _promptlist[index];
 }
 
 }
