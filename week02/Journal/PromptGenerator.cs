@@ -15,9 +15,9 @@ public List<string> _promptlist = new List<string>{
 };
 public string GetRandomPrompt()
 {
-Random get_index = new Random();
-int index = get_index.Next(0, _promptlist.Count);
-return _promptlist[index];
+    Random get_index = new Random();
+    int index = get_index.Next(0, _promptlist.Count);
+    return _promptlist[index];
 }
 
 }

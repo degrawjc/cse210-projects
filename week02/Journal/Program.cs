@@ -7,12 +7,12 @@ class Program
     {
         string choice = "0";
 
+        Journal journal = new Journal();
+
+        Console.WriteLine("Welcome to the Journal Program!");
+
         while (choice != "5")
         {
-
-            Journal journal = new Journal();
-
-            Console.WriteLine("Welcome to the Journal Program!.");
             Console.WriteLine("Please select one of the following choices:");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
@@ -32,16 +32,16 @@ class Program
                 journal.DisplayAll();
             }
 
-             if (choice == "3")
+            if (choice == "3")
             {
-                //journal3.SaveToFile();
+                journal.SaveToFile();
             }
-        
-        else
-        {
-            Console.WriteLine("Thank you, goodbye!");
-        }
 
+            if (choice == "4")
+            {
+                journal.LoadFromFile();
+            }
         }
+        Console.WriteLine("Thank you, goodbye!");
     }
 }
