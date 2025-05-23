@@ -1,7 +1,9 @@
 public class Scripture
 {
-    Reference _reference = new Reference("book", 0, 0);
-    public List<Word> _words = new List<Word>();
+    Reference _reference = new Reference("Mosiah", 2, 17);
+    private List<Word> _words = new List<Word>(
+        
+    );
     Scripture(Reference reference, string text)
     {
 
